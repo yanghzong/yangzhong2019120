@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XiangqingActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/shang"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_height="@dimen/dp_50">
+        <ImageView
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/sdv_head"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_fenxiang"
+            android:textSize="@dimen/sp_20"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="分享"/>
+    </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_banner"
+            android:layout_below="@id/shang"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_300"
+             />
+    <TextView
+        android:layout_below="@id/vp_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_18"
+        android:text="我是详情的名称"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:id="@+id/tv_xiangqingname"/>
+    <TextView
+        android:layout_below="@id/tv_xiangqingname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_xiangqingprice"
+        android:text="$:123456"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="#ec5a5a"
+            android:layout_width="@dimen/dp_150"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_50"
+            android:id="@+id/tv_addshopcar"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_25"
+            android:layout_alignParentRight="true"
+            android:text="加入购物车"/>
+    </RelativeLayout>
+
+</LinearLayout>
